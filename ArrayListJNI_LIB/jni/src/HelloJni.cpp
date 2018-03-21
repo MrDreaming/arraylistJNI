@@ -102,7 +102,7 @@ JNIEXPORT jobject JNICALL  getUserList(JNIEnv *env, jobject jthiz){
 			jfieldID user_isMan = env->GetFieldID(cls_user,"isMan","Z");  
 			jfieldID user_age = env->GetFieldID(cls_user,"age","I");  			
 			env->SetLongField(obj_user,user_id,i);  			
-			env->SetObjectField(obj_user,user_name,env->NewStringUTF("LiangYaoTian"));  
+			env->SetObjectField(obj_user,user_name,env->NewStringUTF("HelloJni.cpp"));  
 			env->SetBooleanField(obj_user,user_isMan,1);  
 			env->SetIntField(obj_user,user_age,21);  
 			env->CallBooleanMethod(obj_ArrayList,arrayList_add,obj_user);  
